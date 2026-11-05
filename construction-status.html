@@ -804,7 +804,7 @@
     "footerBrandName": "Baseline Development Companies, LLC",
     "reportTitle": "CONSTRUCTION STATUS",
     "issuedDate": "11 / 06 / 2026",
-    "statusPill": "Active � On Schedule",
+    "statusPill": "Active · On Schedule",
     "projectCode": "TSC-SUMTER-SC",
     "projectType": "Ground-Up Retail Development",
     "projectName": "Tractor Supply",
@@ -862,39 +862,39 @@
         "railPercent": 60,
         "milestones": [
             {
-                "label": "M1 � Start",
+                "label": "M1 · Start",
                 "date": "Aug 17, 2026",
                 "state": "done"
             },
             {
-                "label": "M2 � Pad Cert.",
+                "label": "M2 · Pad Cert.",
                 "date": "Sept 9, 2026",
                 "state": "done"
             },
             {
-                "label": "M3 � Foundations",
+                "label": "M3 · Foundations",
                 "date": "Sept 15, 2026",
                 "state": "done"
             },
             {
-                "label": "M4 � Masonry / Steel",
+                "label": "M4 · Masonry / Steel",
                 "date": "Oct 30, 2026",
                 "state": "done"
             },
             {
-                "label": "M5 � CO / TCO",
+                "label": "M5 · CO / TCO",
                 "date": "Feb 15, 2027",
                 "state": "upcoming"
             },
             {
-                "label": "M6 � Fixture Date",
+                "label": "M6 · Fixture Date",
                 "date": "Mar 14, 2027",
                 "state": "upcoming"
             }
         ]
     },
     "currentStatus": {
-        "trendText": "? On Schedule",
+        "trendText": "● On Schedule",
         "trendClass": "ok",
         "completePercent": "39%",
         "dayCaption": "Day 82 of 210<br>Calculated Nov 6, 2026",
@@ -944,7 +944,7 @@
         ]
     },
     "completedThisWeek": {
-        "heading": "This Week - Week Ending 11/06",
+        "heading": "This Week — Week Ending 11/06",
         "tag": "Field Update",
         "items": [
             {
@@ -998,7 +998,7 @@
         ]
     },
     "plannedNext": {
-        "heading": "Planned � Next 2 Weeks",
+        "heading": "Planned · Next 2 Weeks",
         "tag": "Next Work",
         "items": [
             {
@@ -1082,24 +1082,24 @@
             "name": "Buck Culbreth",
             "org": "Baseline Development Companies, LLC",
             "email": "buck@baselinedevelopment.com",
-            "phone": "919 � 222 � 6063"
+            "phone": "919 · 222 · 6063"
         },
         {
             "role": "General Contractor PM",
             "name": "Alec Villafana",
             "org": "DooleyMack Constructors of South Carolina",
             "email": "avillafana@dooleymacksc.com",
-            "phone": "843 � 830 � 8960"
+            "phone": "843 · 830 · 8960"
         },
         {
             "role": "Tenant PM",
             "name": "Paul Rondeau",
             "org": "Tractor Supply Company",
             "email": "prondeau@TractorSupply.com",
-            "phone": "813 � 298 � 2620"
+            "phone": "813 · 298 · 2620"
         }
     ],
-    "footerLine": "Retail � Ground-Up � Build-To-Suit",
+    "footerLine": "Retail · Ground-Up · Build-To-Suit",
     "footerMeta": []
 };
 </script>
@@ -1239,7 +1239,7 @@
   const esc = value => String(value ?? '');
 
   document.body.dataset.theme = dashboardData.theme;
-  document.title = `${dashboardData.projectCode} � ${dashboardData.projectName} ${dashboardData.projectEmphasis} � ${dashboardData.reportTitle}`;
+  document.title = `${dashboardData.projectCode} · ${dashboardData.projectName} ${dashboardData.projectEmphasis} · ${dashboardData.reportTitle}`;
 
   el('brand-name').textContent = dashboardData.baselineBrand;
   el('brand-sub').textContent = dashboardData.baselineSubbrand;
@@ -1247,7 +1247,7 @@
   el('issued-date').textContent = dashboardData.issuedDate;
   el('status-pill').textContent = dashboardData.statusPill;
   el('project-code').textContent = dashboardData.projectCode;
-  el('project-type').textContent = `� ${dashboardData.projectType}`;
+  el('project-type').textContent = `· ${dashboardData.projectType}`;
   el('project-name').textContent = dashboardData.projectName;
   el('project-emphasis').textContent = dashboardData.projectEmphasis;
   el('subtitle').textContent = dashboardData.subtitle;
@@ -1307,7 +1307,7 @@
 
   el('keydates').innerHTML = dashboardData.keyDates.map(item => `
     <div class="kd ${item.highlight ? 'hi' : ''}">
-      ${item.highlight ? '<span class="kd-star">?</span>' : ''}
+      ${item.highlight ? '<span class="kd-star">★</span>' : ''}
       <div class="kd-label">${esc(item.label).replace(/\n/g, '<br>')}</div>
       <div class="kd-date">${esc(item.date)}</div>
     </div>
